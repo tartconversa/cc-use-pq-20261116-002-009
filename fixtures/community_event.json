@@ -1,0 +1,35 @@
+{
+  "event": {
+    "id": "demo2026", "name": "社区健身展示活动",
+    "starts_at": "2026-10-26T08:00:00+08:00",
+    "ends_at": "2026-10-26T19:00:00+08:00", "timezone": "Asia/Shanghai"
+  },
+  "groups": [
+    {"code": "aerobics", "label": "健身操", "criteria": {"technique": 40, "formation": 35, "expression": 25}, "min_judges": 2, "max_judges": 3},
+    {"code": "cheer", "label": "啦啦操", "criteria": {"technique": 45, "formation": 30, "expression": 25}, "min_judges": 2, "max_judges": 3}
+  ],
+  "teams": [
+    {"team_id": "t1", "group_code": "aerobics", "name": "星火队", "district": "青浦", "member_count": 12},
+    {"team_id": "t2", "group_code": "cheer", "name": "晨光队", "district": "闵行", "member_count": 10}
+  ],
+  "judges": [
+    {"judge_id": "j1", "name": "裁判甲", "group_code": "aerobics"},
+    {"judge_id": "j2", "name": "裁判乙", "group_code": "aerobics"},
+    {"judge_id": "j3", "name": "裁判丙", "group_code": "cheer"},
+    {"judge_id": "j4", "name": "裁判丁", "group_code": "cheer"}
+  ],
+  "zones": [
+    {"code": "tea", "label": "中医茶饮", "kind": "tea", "opens_at": "2026-10-26T09:00:00+08:00", "closes_at": "2026-10-26T18:00:00+08:00"},
+    {"code": "tour", "label": "文旅咨询", "kind": "tourism", "opens_at": "2026-10-26T09:00:00+08:00", "closes_at": "2026-10-26T18:00:00+08:00"}
+  ],
+  "scores": [
+    {"team_id": "t1", "judge_id": "j1", "scores": {"technique": 36, "formation": 32, "expression": 22}, "request_key": "s1"},
+    {"team_id": "t1", "judge_id": "j2", "scores": {"technique": 37, "formation": 31, "expression": 23}, "request_key": "s2"},
+    {"team_id": "t2", "judge_id": "j3", "scores": {"technique": 42, "formation": 27, "expression": 22}, "request_key": "s3"},
+    {"team_id": "t2", "judge_id": "j4", "scores": {"technique": 41, "formation": 28, "expression": 21}, "request_key": "s4"}
+  ],
+  "encounters": [
+    {"id": "e1", "zone_code": "tea", "occurred_at": "2026-10-26T10:00:00+08:00", "visitor_token": "local-visitor-1", "count": 2, "attributes": {"topic": "茶饮"}},
+    {"id": "e2", "zone_code": "tour", "occurred_at": "2026-10-26T11:00:00+08:00", "visitor_token": "local-visitor-2", "count": 1, "attributes": {"topic": "游览"}}
+  ]
+}
